@@ -1,9 +1,17 @@
 package executavel;
 
+import java.io.IOException;
+
+import model.vo.ProdutoVO;
+import view.MenuProduto;
+
 public class Executavel {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public static void main(String[] args) throws IOException {
+
+		ProdutoVO produtoVO = new ProdutoVO();
+		MenuProduto menuProduto = new MenuProduto();
+		menuProduto.apresentarMenuProduto(produtoVO);
 
 	}
 
