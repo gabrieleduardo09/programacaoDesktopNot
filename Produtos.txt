@@ -1,0 +1,5 @@
+Tablet - 15000.0 - 1234
+Not - 2400.0 - 1122
+Celular Motorola - 1850.0 - 112
+Teclado - 45.0 - 2332
+PenDrive - 50.0 - 3232

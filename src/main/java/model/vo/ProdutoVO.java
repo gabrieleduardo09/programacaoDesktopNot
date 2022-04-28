@@ -3,14 +3,14 @@ package model.vo;
 public class ProdutoVO {
 
 	private String nome;
-	private double preco;
-	private int codigo;
+	private float preco;
+	private short codigo;
 
 	public ProdutoVO() {
 		super();
 	}
 
-	public ProdutoVO(String nome, double preco, int codigo) {
+	public ProdutoVO(String nome, float preco, short codigo) {
 		super();
 		this.nome = nome;
 		this.preco = preco;
@@ -25,22 +25,22 @@ public class ProdutoVO {
 		this.nome = nome;
 	}
 
-	public double getPreco() {
+	public float getPreco() {
 		return preco;
 	}
 
-	public void setPreco(double preco) {
+	public void setPreco(float preco) {
 		this.preco = preco;
 	}
 
-	public int getCodigo() {
+	public short getCodigo() {
 		return codigo;
 	}
 
-	public void setCodigo(int codigo) {
+	public void setCodigo(short codigo) {
 		this.codigo = codigo;
 	}
-	
+
 	@Override
 	public String toString() {
 		return nome + " - " + preco + " - " + codigo;
