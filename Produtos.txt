@@ -3,3 +3,7 @@ Not - 2400.0 - 1122
 Celular Motorola - 1850.0 - 112
 Teclado - 45.0 - 2332
 PenDrive - 50.0 - 3232
+Fone - 30.0 - 7864
+Cadeira - 200.0 - 8574
+Celular - 1200.0 - 6378
+Caixa de Som - 3214.0 - 231

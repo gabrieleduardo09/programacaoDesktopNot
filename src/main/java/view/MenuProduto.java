@@ -52,6 +52,7 @@ public class MenuProduto {
 			} catch(NumberFormatException e) {
 				opcao = -1;
 				e.printStackTrace();
+				//this.apresentarMenuProduto(produtoVO);
 			}
 		}
 
@@ -59,17 +60,17 @@ public class MenuProduto {
 
 	private void cadastrarProduto(ProdutoVO produtoVO) throws IOException {
 		String nome = JOptionPane.showInputDialog("Digite o Nome do produto");
-		float preco = Float.parseFloat(JOptionPane.showInputDialog("Digite o Preço do Produto"));  
-		short codigo = Short.parseShort(JOptionPane.showInputDialog("Digite o Código do Produto"));
-		
 		produtoVO.setNome(nome);
+		float preco = Float.parseFloat(JOptionPane.showInputDialog("Digite o Preço do Produto"));  
 		produtoVO.setPreco(preco);
+		short codigo = Short.parseShort(JOptionPane.showInputDialog("Digite o Código do Produto"));
 		produtoVO.setCodigo(codigo);
 		
 		ProdutoController produtoController = new ProdutoController();
-		produtoVO = produtoController.cadastrarProdutoController(produtoVO);
+		produtoVO = produtoController.cadastrarProdutoController(produtoVO);			
+		
 	}
-	
+
 	private void  listarProdutoPorCodigo() throws IOException {
 		ProdutoVO  produtoVO = new ProdutoVO(); 
 		
@@ -78,12 +79,12 @@ public class MenuProduto {
 		ProdutoController produtoController = new ProdutoController();
 		produtoVO = produtoController.listarProdutoPorCodigoController(produtoVO);
 		
-		JOptionPane.showMessageDialog(null, produtoVO);
+		JOptionPane.showMessageDialog(null, "NOME       PREÇO      CÓDIGO\n" + produtoVO);
 	}
 	
 	private void listarTodosProdutos() throws IOException {
 		String produtosVO = listaTodosProdutos();
-		JOptionPane.showMessageDialog(null, produtosVO);
+		JOptionPane.showMessageDialog(null, "NOME       PREÇO      CÓDIGO\n" + produtosVO);
 	}
 	
 	private void excluirProdutoPorCodigo() throws IOException {
