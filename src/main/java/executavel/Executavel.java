@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import model.vo.ProdutoVO;
 import view.MenuProduto;
+import view.TelaMenuPrincipal;
 
 public class Executavel {
 
@@ -11,7 +12,8 @@ public class Executavel {
 
 		ProdutoVO produtoVO = new ProdutoVO();
 		MenuProduto menuProduto = new MenuProduto();
-		menuProduto.apresentarMenuProduto(produtoVO);
+		//menuProduto.apresentarMenuProduto(produtoVO);
+		TelaMenuPrincipal telaMenuPrincipal = new TelaMenuPrincipal();
 
 	}
 
