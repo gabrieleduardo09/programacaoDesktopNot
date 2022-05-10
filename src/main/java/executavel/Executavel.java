@@ -12,8 +12,8 @@ public class Executavel {
 
 		ProdutoVO produtoVO = new ProdutoVO();
 		MenuProduto menuProduto = new MenuProduto();
-		//menuProduto.apresentarMenuProduto(produtoVO);
-		TelaMenuPrincipal telaMenuPrincipal = new TelaMenuPrincipal();
+		menuProduto.apresentarMenuProduto(produtoVO);
+		//TelaMenuPrincipal telaMenuPrincipal = new TelaMenuPrincipal();
 
 	}
 

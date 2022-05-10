@@ -2,6 +2,7 @@ package model.vo;
 
 public class ProdutoVO {
 
+	private int id;
 	private String nome;
 	private float preco;
 	private short codigo;
@@ -10,11 +11,20 @@ public class ProdutoVO {
 		super();
 	}
 
-	public ProdutoVO(String nome, float preco, short codigo) {
+	public ProdutoVO(int id, String nome, float preco, short codigo) {
 		super();
+		this.id = id;
 		this.nome = nome;
 		this.preco = preco;
 		this.codigo = codigo;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getNome() {
